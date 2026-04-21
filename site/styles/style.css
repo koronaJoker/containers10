@@ -1,0 +1,92 @@
+/* Сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные переменные */
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --accent: #38bdf8;
+    --border: #334155;
+}
+
+/* Тело страницы */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 40px;
+}
+
+/* Контейнер */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Карточка */
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
+}
+
+/* Заголовок */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+/* Текст */
+p {
+    font-size: 16px;
+    color: var(--text);
+}
+
+/* Ссылки */
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: var(--accent);
+    color: #000;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
